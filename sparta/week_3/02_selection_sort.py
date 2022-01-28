@@ -7,7 +7,7 @@ def selection_sort(array):
     for i in range(a - 1):
         min_index = i # array에서 최소값을 찾는 변수
         for j in range(a - i):
-            if array[i + j] < array[min_index]:
+            if array[i + j] < array[min_index]: # array[i + j] 현재 인덱스
                 min_index = i + j
             array[i], array[min_index] = array[min_index], array[i]
 
