@@ -34,5 +34,18 @@ class Stack:
     def is_empty(self):
         return self.head is None
 
+stack = Stack()
+stack.push(3) # 3
+print(stack.peek()) # 3
 
+stack.push(4) # 4 3
+stack.push(5) # 5 4 3
+print(stack.peek()) # 5
 
+stack.pop() # 4 3
+print(stack.peek()) # 4
+
+print(stack.is_empty()) # False
+stack.pop() # 3
+stack.pop() # empty
+print(stack.is_empty()) # True

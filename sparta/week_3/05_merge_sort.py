@@ -10,8 +10,8 @@ def merge_sort(array):
     right_array = merge_sort(array[mid:])
 
     print(array)
-    print('left_array', left_array)
-    print('right_array', right_array)
+    print('left_array :', left_array)
+    print('right_array :', right_array)
 
     return merge(left_array, right_array)
 

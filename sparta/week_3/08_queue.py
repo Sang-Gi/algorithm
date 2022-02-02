@@ -38,16 +38,16 @@ class Queue:
         return self.head is None
 
 
-# queue = Queue()
-# queue.enqueue(3)
-# print(queue.peek())
-# queue.enqueue(4)
-# print(queue.peek())
-# queue.enqueue(5)
-# print(queue.peek())
-# queue.dequeue()
-# print(queue.peek())
-# queue.dequeue()
-# print(queue.peek())
-# queue.dequeue()
-# print(queue.peek())
+queue = Queue()
+queue.enqueue(3) # 3
+print(queue.peek()) # 3
+queue.enqueue(4) # 3 4
+print(queue.peek()) # 3
+queue.enqueue(5) # 3 4 5
+print(queue.peek()) # 3
+queue.dequeue() # 4 5
+print(queue.peek()) # 4
+queue.dequeue() # 5
+print(queue.peek()) # 5
+queue.dequeue() # empty
+print(queue.peek()) # Queue is empty !
